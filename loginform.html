@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.CSS">
+</head>
+<body>
+    <div class="container">
+        <div class="link">login</div>
+        <div class="form">
+            <div class="form-header">
+                <h2>login form</h2>
+            </div>
+            
+            <div class="form-body">
+              <form action="">
+                  <input type="email" placeholder="Enter your email" class="field">
+                  <input type="password" placeholder="Enter your password" class="field">
+                  <div class="options">
+                    <input  type="checkbox" name="" class="remember">Remaind me
+                      <a href="" class="forgot">Forgot password</a>
+                   
+                  </div>
+                  <button>Login</button>
+             </form>
+              
+             
+            </div>
+         <div class="form-footer">
+            <span >Not a member?</span>
+            <a href="">signup now</a>
+        </div>
+        </div>
+    </div>
+    <script>
+        const linkEle=document.querySelector('link');
+        const formEle=document.querySelector('.form');
+        linkEle.onclick = function(){
+            formEle.classList.toggle('show')
+        }
+    </script>
+</body>
+</html>

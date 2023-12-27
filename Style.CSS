@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    height:100vh;
+    background-color: beige;
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.link{
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: blue;
+
+}
+.form{
+    position:relative;
+    width:350px;
+    height:370px;
+    background-color: white;
+    box-shadow: rgba(100,100,111,0.2) 0 7px 29px 0px;
+    border-radius: 8px;
+    animation-name: fadedrop;
+    animation-duration: 1s;
+    display: none;
+
+
+}
+.show{
+    display: block;
+}
+
+@keyframes fadedrop{
+    0%{
+        opacity: 0.4;
+        transform: translate(0,-50%);
+    }
+    50%{
+        opacity: 0.6;
+        transform: translate(0,20%);
+    }
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+.form header{
+    border-radius: 8px 8px 0 0;
+    background-color: bisque;
+    padding: 10px;
+    text-align: center;
+}
+.form-body{
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+
+}
+.field{
+    font-size: 16px;
+    font-weight: 400;
+    width:100%;
+    padding:10px 20px;
+    border:1px solid lightgrey;
+    outline: none;
+    border-radius: 30px;
+    margin: 10px 0;
+
+}
+button{
+    padding: 8px 20px;
+    border:none;
+    outline:none;
+    width:100%;
+    background-color: aqua;
+    color: white;
+    border-radius: 30px;
+    font-size: 20px;
+
+}
+.forgot{
+    float:right;
+
+}
+.option{
+    padding: 0 10px;
+    margin:15px 0 25px;
+
+}
+.form-footer{
+    text-align: center;
+}
+.rember{
+    margin-right:5px ;
+}
